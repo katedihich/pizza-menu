@@ -98,11 +98,17 @@ body {
   width: 80%;
 }
 
-.pizzas {
+.pizzas_grid {
   list-style: none;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4.8rem;
+}
+/* Media query for mobile devices */
+@media (max-width: 600px) {
+  .pizzas_grid {
+    grid-template-columns: 1fr; /* One column on mobile */
+  }
 }
 
 .pizza {
